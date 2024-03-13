@@ -1,0 +1,20 @@
+:root {
+    --direction: rtl;
+}
+
+$direction: rtl;
+
+//colors
+$color-primary: #e30613;
+$color-secondary: #0098a5;
+$color-pale: #f3fafb;
+$color-muted: #fafafa;
+$color-gray: #667085;
+$color-font: #000000;
+$color-body: #ffff;
+$color-white: #ffff;
+
+//font
+$font-size: 1.6rem;
+$font-family: "Cairo", sans-serif;
+$line-height: calc(($font-size * 1.5) + 2px);

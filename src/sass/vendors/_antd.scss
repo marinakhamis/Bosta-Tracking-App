@@ -1,0 +1,22 @@
+.table_ctr {
+    flex-basis: 60%;
+
+    @include responsive-max(1100) {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+
+    .ant-table-thead {
+
+        .ant-table-cell {
+            color: $color-gray !important;
+        }
+    }
+
+    .ant-table-cell {
+        color: $color-gray;
+    }
+
+
+}

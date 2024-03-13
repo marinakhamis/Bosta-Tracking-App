@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    @include font-face('Cairo', './src/utils/fonts/', 'Cairo-Black', 900, normal);
+    @include font-face('Cairo', './src/utils/fonts/', 'Cairo-ExtraBold', 800, normal);
+    @include font-face('Cairo', './src/utils/fonts/', 'Cairo-Bold', 700, normal);
+    @include font-face('Cairo', './src/utils/fonts/', 'Semi-Bold', 600, normal);
+    @include font-face('Cairo', './src/utils/fonts/', 'Cairo-Medium', 500, normal);
+    @include font-face('Cairo', './src/utils/fonts/', 'Cairo-Regular', 400, normal);
+    @include font-face('Cairo', './src/utils/fonts/', 'Cairo-Light', 300, normal);
+    @include font-face('Cairo', './src/utils/fonts/', 'Cairo-ExtraLight', 200, normal);
+    font-size: 100%; //1rem = 10px
+
+    @include responsive-max(1920) {
+        font-size: 62.5%; //1rem = 8px
+    }
+
+    @include responsive-max(780) {
+        font-size: 50%;
+    }
+
+    @include responsive-max(500) {
+        font-size: 48%;
+    }
+
+    direction: var(--direction);
+}
+
+body {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: $font-size;
+    direction: var(--direction);
+    line-height: $line-height;
+
+    [dir="ltr"] & {
+        //Change font family in english
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+::selection,
+::-moz-selection {
+    background-color: $color-secondary;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    font-family: $font-family;
+    color: $color-font;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: $font-size;
+}
+
+button {
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    outline: none;
+}

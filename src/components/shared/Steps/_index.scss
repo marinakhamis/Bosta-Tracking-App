@@ -1,0 +1,40 @@
+.steps {
+    .anticon {
+        color: $color-gray;
+
+    }
+
+    .ant-steps-item-finish {
+        .anticon {
+            color: $color-primary;
+
+        }
+    }
+
+    .ant-steps-item-active {
+        .ant-steps-icon {
+            padding: 0.5rem 1.5rem;
+            background-color: $color-primary;
+            border-radius: 50%;
+
+            svg {
+                color: $color-white;
+            }
+
+        }
+    }
+}
+
+// .ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-icon {
+//     background-color: red;
+// }
+
+// .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-icon {
+//     background-color: orange;
+// }
+
+.ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-icon {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}

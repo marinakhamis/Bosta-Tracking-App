@@ -1,0 +1,23 @@
+// Local fonts mixin 
+@mixin font-face($family, $path, $file, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $family, "Cairo", sans-serif;
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+        src:
+            local($family),
+            url($path + $file + '.ttf') format('truetype'),
+
+
+    }
+}
+
+// Responsive media query
+@mixin responsive-max($width-pixels) {
+    $width-em: calc($width-pixels/16);
+
+    @media (max-width:'#{$width-em}em') {
+        @content;
+    }
+}

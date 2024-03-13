@@ -1,0 +1,15 @@
+.main_nav {
+    background-color: $color-white;
+    padding: 2rem;
+
+    .lang_select {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            text-decoration: underline;
+            color: $color-primary;
+        }
+    }
+
+}
