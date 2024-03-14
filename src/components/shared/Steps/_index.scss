@@ -1,13 +1,11 @@
 .steps {
     .anticon {
         color: $color-gray;
-
     }
 
     .ant-steps-item-finish {
         .anticon {
             color: $color-primary;
-
         }
     }
 
@@ -20,21 +18,11 @@
             svg {
                 color: $color-white;
             }
-
         }
     }
-}
-
-// .ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-icon {
-//     background-color: red;
-// }
-
-// .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-icon {
-//     background-color: orange;
-// }
-
-.ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-icon {
-    background-color: green;
-    width: 200px;
-    height: 200px;
+    @include responsive-max(500) {
+        .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail::after {
+            height: 0 !important;
+        }
+    }
 }

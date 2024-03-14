@@ -7,7 +7,7 @@ import { Table, ShipmentSteps } from '../../components';
 
 //assets
 import repotImg from "../../assets/icons/faq_icon.svg"
-import { FileDoneOutlined, TruckOutlined, CheckCircleFilled } from "@ant-design/icons"
+import { FileDoneOutlined, TruckOutlined, CheckCircleFilled, DeliveredProcedureOutlined } from "@ant-design/icons"
 
 
 //styles
@@ -20,7 +20,7 @@ const ShipmentDetails = () => {
     const { id } = useParams();
     const steps = [
         { id: 1, title: 'TICKET_CREATED', icon: <CheckCircleFilled /> },
-        { id: 2, title: 'PACKAGE_RECEIVED', icon: <CheckCircleFilled /> },
+        { id: 2, title: 'PACKAGE_RECEIVED', icon: <DeliveredProcedureOutlined /> },
         { id: 3, title: 'OUT_FOR_DELIVERY', icon: <TruckOutlined /> },
         { id: 4, title: 'DELIVERED', icon: <FileDoneOutlined /> }
     ];
