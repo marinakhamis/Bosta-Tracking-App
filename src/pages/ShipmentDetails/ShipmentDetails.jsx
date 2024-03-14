@@ -91,7 +91,7 @@ const ShipmentDetails = () => {
             {/* End Tracking details header */}
 
 
-            <div className='d-flex flex-row flex-nowrap gap-5 '>
+            <div className='shipment__details gap-5 '>
                 {/* Start Details Table  */}
                 <Table columns={columns} data={shipment?.TransitEvents} />
                 {/* End Details Table  */}

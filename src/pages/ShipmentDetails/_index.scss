@@ -1,5 +1,16 @@
 .shipment-header {
     border-radius: 1.2rem;
     border: 1px solid $color-muted;
-    box-shadow: 0 0 1px 1px #e4e7ec, 0 4px 4px rgba(29, 41, 57, .05);
+    box-shadow:
+        0 0 1px 1px #e4e7ec,
+        0 4px 4px rgba(29, 41, 57, 0.05);
+}
+
+.shipment__details {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    @include responsive-max(1100) {
+        display: flex;
+        flex-direction: column;
+    }
 }
